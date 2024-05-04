@@ -13,10 +13,7 @@ import Server from '../assets/img/server.jpeg';
 const Stack = () => {
    return (
       <>
-         <div
-            className="color-change"
-            style={{ textAlign: 'center', padding: '50px' }}
-         >
+         <div style={{ textAlign: '', padding: '50px' }}>
             <div>
                <p style={{ fontSize: '25px' }}>Lenguajes y Bases de datos</p>
                <div style={{ display: 'flex', justifyContent: 'center' }}>

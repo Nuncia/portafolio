@@ -1,11 +1,10 @@
 const Home = () => {
    return (
       <div
-         className="color-change"
          style={{
             display: 'flex',
             justifyContent: 'center',
-            height: '70vh',
+            height: '100vh',
             alignContent: 'center',
             flexDirection: 'column',
             alignItems: 'center',
@@ -13,7 +12,7 @@ const Home = () => {
       >
          <div style={{ height: '50px' }}>
             <h2>Mónica Ayala Huerta</h2>
-            <span></span>
+            <span className="nombre">Desarrollador FullStack</span>
             <span className="nombre">Ingeniero civil en computación</span>
          </div>
       </div>

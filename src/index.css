@@ -6,7 +6,6 @@
 button{
   background-color: #313234 !important;
 }
-
 .nombre{
   display: block;
   font-family: monospace;
@@ -21,31 +20,33 @@ button{
   text-align: center;
   margin-left: 19px;
 }
-
 @keyframes escribir {
   from {width: 100}
   to {width: 0;}
 }
-
 @keyframes typing {
   0%{width: 0%}
   50% {width: 75%}
   100% {width: 100%}
 }
-
 @keyframes blink {
   50% {border-color: transparent;}
 }
-.navBar{
+.navBar footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-   color: white;
-  animation: cambioColor 10s infinite alternate;
+   color: white; 
+   /* animation: cambioColor 10s infinite alternate;
+   transition: background-color 0.5s ease; */
 }
 .active{
   text-decoration: none;
-  color: darkolivegreen;
+  color: white;
+}
+.inActive{
+  text-decoration: none;
+  color: white;
 }
 @keyframes cambioColor {
   0% {background-color: rgb(14, 14, 56);}
@@ -88,9 +89,12 @@ button{
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #456990;
-  color: #fff;
   overflow-x: hidden;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  color: white;
+
+  /* animation: cambioColor 10s infinite alternate;
+  transition: background-color 0.5s ease; */
 }
 
 /* The actual timeline (the vertical ruler) */

@@ -92,7 +92,7 @@ const Proyectos = () => {
             <div className="col">
                <div
                   className="card"
-                  style={{ width: '35rem', border: '3px solid transparent' }}
+                  style={{ width: '35rem', border: '3px solid white' }}
                >
                   <img
                      src={pokemon}
@@ -166,10 +166,13 @@ const Proyectos = () => {
                   </div>
                </div>
             </div>
-            <div className="col">
+            <div className="col" style={{ paddingBottom: '60px' }}>
                <div
                   className="card"
-                  style={{ width: '35rem', border: '3px solid white' }}
+                  style={{
+                     width: '35rem',
+                     border: '3px solid white',
+                  }}
                >
                   <img
                      src={adoptaPerrito}
@@ -242,7 +245,7 @@ const Proyectos = () => {
                   </div>
                </div>
             </div>
-            <div className="col">
+            <div className="col" style={{ paddingBottom: '60px' }}>
                <div
                   className="card"
                   style={{ width: '35rem', border: '3px solid white' }}
@@ -260,6 +263,7 @@ const Proyectos = () => {
                      style={{
                         display: 'flex',
                         justifyContent: 'space-evenly',
+                        paddingBottom: '40px',
                      }}
                   >
                      <button
