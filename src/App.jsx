@@ -7,10 +7,11 @@ import Experiencia from './views/Experiencia';
 import Educación from './views/Educación';
 import Proyectos from './views/Proyectos';
 import Footer from './components/Footer';
+import Contacto from './views/Contacto';
 
 function App() {
    return (
-      <div>
+      <div className="cambiaColor">
          <BrowserRouter>
             <NavBar />
             <Routes>
@@ -19,6 +20,7 @@ function App() {
                <Route path="/experiencia" element={<Experiencia />} />
                <Route path="/educacion" element={<Educación />} />
                <Route path="/proyectos" element={<Proyectos />} />
+               <Route path="/contacto" element={<Contacto />} />
             </Routes>
             {/* <Footer /> */}
          </BrowserRouter>

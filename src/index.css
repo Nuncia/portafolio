@@ -12,22 +12,17 @@ button{
   white-space: nowrap;
   border-right: 4px solid;
   width: 32ch;
+  font-size: 20px;
   font-style: italic;
   animation: escribir 5s steps(30) infinite alternate;
-  /* animation: typing 1.5s steps(12), blink .5s infinite step-end alternate; */
   overflow: hidden;
   height: 22px;
   text-align: center;
   margin-left: 19px;
 }
 @keyframes escribir {
-  from {width: 100}
+  from {width: 75%}
   to {width: 0;}
-}
-@keyframes typing {
-  0%{width: 0%}
-  50% {width: 75%}
-  100% {width: 100%}
 }
 @keyframes blink {
   50% {border-color: transparent;}
@@ -36,7 +31,7 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-   color: white; 
+   color: white;
    /* animation: cambioColor 10s infinite alternate;
    transition: background-color 0.5s ease; */
 }
@@ -48,10 +43,19 @@ button{
   text-decoration: none;
   color: white;
 }
+input,textarea{
+  background-color: white !important;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes cambioColor {
   0% {background-color: rgb(14, 14, 56);}
-  50% {background-color: rgb(7, 6, 26);}
-  100% {background-color: rgb(9, 9, 34);};
+  50% {background-color: rgb(34, 34, 205);}
+  100% {background-color: rgb(24, 80, 83);};
 }
 .linea-vertical{
   border: 5px solid rgb(223, 243, 10);
@@ -90,9 +94,7 @@ body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #456990;
   overflow-x: hidden;
-  /* padding-bottom: 50px; */
   color: white;
-
   /* animation: cambioColor 10s infinite alternate;
   transition: background-color 0.5s ease; */
 }

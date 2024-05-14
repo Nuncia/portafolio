@@ -11,9 +11,9 @@ const Home = () => {
          }}
       >
          <div style={{ height: '50px' }}>
-            <h2>Mónica Ayala Huerta</h2>
-            <span className="nombre">Desarrollador FullStack</span>
-            <span className="nombre">Ingeniero civil en computación</span>
+            <h1>Mónica Ayala Huerta</h1>
+            <span className="nombre">Desarrolladora FullStack</span>
+            {/* <span className="nombre">Ingeniero civil en computación</span> */}
          </div>
       </div>
    );

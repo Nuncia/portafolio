@@ -13,20 +13,24 @@ import Server from '../assets/img/server.jpeg';
 const Stack = () => {
    return (
       <>
-         <div style={{ textAlign: '', padding: '50px' }}>
+         <div style={{ textAlign: 'center', padding: '50px' }}>
             <div>
-               <p style={{ fontSize: '25px' }}>Lenguajes y Bases de datos</p>
+               <h1>Lenguajes y Bases de datos</h1>
                <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <div
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '146px',
                         marginRight: '50px',
                      }}
                   >
                      <img
-                        style={{ width: '110px', paddingBottom: '25px' }}
+                        style={{
+                           width: '181px',
+                           paddingBottom: '15px',
+                           marginLeft: '-133px',
+                        }}
                         src={Server}
                         alt="SQL Server"
                         onClick={() =>
@@ -35,25 +39,25 @@ const Stack = () => {
                            )
                         }
                      />
-                     <>SQL Server</>
+                     <span style={{ marginLeft: '-139px' }}>SQL Server</span>
                   </div>
                   <div
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '323px',
                         marginRight: '50px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '159px' }}
                         src={postgres}
                         alt="Postgres"
                         onClick={() =>
                            window.open('https://www.postgresql.org/')
                         }
                      />
-                     <>Postgres</>
+                     <span style={{ marginLeft: '-141px' }}>Postgres</span>
                   </div>
                   <div
                      style={{
@@ -63,31 +67,31 @@ const Stack = () => {
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '144px' }}
                         src={javaScript}
                         alt="JavaScript"
                         onClick={() =>
                            window.open('https://developer.mozilla.org/es/')
                         }
                      />
-                     <span>JavaScript</span>
+                     <span style={{ marginLeft: '35px', marginTop: 'auto' }}>
+                        JavaScript
+                     </span>
                   </div>
                </div>
             </div>
-            <div style={{ marginTop: '50px' }}>
-               <p style={{ fontSize: '25px' }}>Frameworks y tecnología</p>
-               <div
-                  style={{ display: 'flex', justifyContent: 'space-between' }}
-               >
+            <div style={{ marginTop: '100px' }}>
+               <h1>Frameworks y tecnología</h1>
+               <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                   <div
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={node}
                         alt="Node"
                         onClick={() => window.open('https://nodejs.org/en')}
@@ -98,11 +102,11 @@ const Stack = () => {
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={express}
                         alt="Express"
                         onClick={() => window.open('https://expressjs.com/es/')}
@@ -113,11 +117,11 @@ const Stack = () => {
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={React}
                         alt="React"
                         onClick={() => window.open('https://es.react.dev/')}
@@ -128,11 +132,11 @@ const Stack = () => {
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={Vite}
                         alt="Vite"
                         onClick={() => window.open('https://es.vitejs.dev/')}
@@ -141,20 +145,18 @@ const Stack = () => {
                   </div>
                </div>
             </div>
-            <div style={{ marginTop: '50px' }}>
-               <p style={{ fontSize: '25px' }}>Herramientas y plataforma</p>
-               <div
-                  style={{ display: 'flex', justifyContent: 'space-between' }}
-               >
+            <div style={{ marginTop: '100px' }}>
+               <h1>Herramientas y plataforma</h1>
+               <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                   <div
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={Git}
                         alt="Git"
                         onClick={() => window.open('https://git-scm.com/')}
@@ -165,11 +167,11 @@ const Stack = () => {
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={Office}
                         alt="Office"
                         onClick={() =>
@@ -184,11 +186,11 @@ const Stack = () => {
                      style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '110px',
+                        width: '181px',
                      }}
                   >
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={VSCODE}
                         alt=""
                         onClick={() =>
@@ -199,7 +201,7 @@ const Stack = () => {
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
                      <img
-                        style={{ width: '110px' }}
+                        style={{ width: '181px' }}
                         src={Grafana}
                         alt=""
                         onClick={() => window.open('https://grafana.com/')}

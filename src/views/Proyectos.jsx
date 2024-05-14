@@ -25,7 +25,7 @@ const Proyectos = () => {
                   />
                   <div className="card-body">
                      <h5 className="card-title">Mamma Mia</h5>
-                     <p className="card-text">
+                     <div className="card-text">
                         <ul>
                            <li>Aplicación Web</li>
                            <li>
@@ -33,7 +33,7 @@ const Proyectos = () => {
                            </li>
                            <li>Datos obtenidos desde JSON</li>
                         </ul>
-                     </p>
+                     </div>
                   </div>
                   <div
                      style={{
@@ -41,24 +41,24 @@ const Proyectos = () => {
                         justifyContent: 'space-evenly',
                      }}
                   >
-                     <button
-                        href="#"
-                        class="btn btn-dark"
+                     <a
+                        href="https://github.com/Nuncia/mammaMia/tree/main"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Github
-                     </button>
-                     <button
+                     </a>
+                     <a
                         href="#"
-                        class="btn btn-dark"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Aplicación
-                     </button>
+                     </a>
                   </div>
                   <div
                      style={{
@@ -102,7 +102,7 @@ const Proyectos = () => {
                   />
                   <div className="card-body">
                      <h5 className="card-title">Aplicación Pokemon</h5>
-                     <p className="card-text">
+                     <div className="card-text">
                         <ul>
                            <li>Aplicación web</li>
                            <li>
@@ -110,7 +110,7 @@ const Proyectos = () => {
                            </li>
                            <li>Datos obtenidos dede JSON</li>
                         </ul>
-                     </p>
+                     </div>
                   </div>
                   <div
                      style={{
@@ -118,24 +118,24 @@ const Proyectos = () => {
                         justifyContent: 'space-evenly',
                      }}
                   >
-                     <button
-                        href="#"
-                        class="btn btn-dark"
+                     <a
+                        href="https://github.com/Nuncia/pokemon/tree/main"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Github
-                     </button>
-                     <button
+                     </a>
+                     <a
                         href="#"
-                        class="btn btn-dark"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Aplicación
-                     </button>
+                     </a>
                   </div>
                   <div
                      style={{
@@ -182,14 +182,14 @@ const Proyectos = () => {
                   />
                   <div className="card-body">
                      <h5 className="card-title">Adopta un perrito</h5>
-                     <p className="card-text">
+                     <div className="card-text">
                         <ul>
                            <li>Aplicación web</li>
                            <li>
                               Desarrollado con React,CSS, HTML y JavaScript
                            </li>
                         </ul>
-                     </p>
+                     </div>
                   </div>
                   <div
                      style={{
@@ -197,24 +197,24 @@ const Proyectos = () => {
                         justifyContent: 'space-evenly',
                      }}
                   >
-                     <button
-                        href="#"
-                        class="btn btn-dark"
+                     <a
+                        href="https://github.com/Nuncia/adoptaUnoPerrito"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Github
-                     </button>
-                     <button
+                     </a>
+                     <a
                         href="#"
-                        class="btn btn-dark"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Aplicación
-                     </button>
+                     </a>
                   </div>
                   <div
                      style={{
@@ -266,24 +266,24 @@ const Proyectos = () => {
                         paddingBottom: '40px',
                      }}
                   >
-                     <button
+                     <a
                         href="#"
-                        class="btn btn-dark"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Github
-                     </button>
-                     <button
+                     </a>
+                     <a
                         href="#"
-                        class="btn btn-dark"
+                        className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
                      >
                         Aplicación
-                     </button>
+                     </a>
                   </div>
                </div>
             </div>
