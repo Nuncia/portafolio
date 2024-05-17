@@ -13,7 +13,7 @@ function App() {
    return (
       <div className="cambiaColor">
          <BrowserRouter>
-            <NavBar />
+            {/* <NavBar /> */}
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/stack" element={<Stack />} />

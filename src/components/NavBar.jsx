@@ -5,8 +5,11 @@ import Monica from '../assets/MONICA_AYALA.pdf';
 const NavBar = () => {
    const setActive = (isActive) => (isActive ? 'active' : 'inActive');
    return (
-      <nav className="navbar navbar-expand-lg" style={{ fontSize: '18px' }}>
-         <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg">
+         <div
+            className="container-fluid"
+            style={{ backgroundColor: 'transparent !important' }}
+         >
             <NavLink className={setActive} to="/">
                <div
                   style={{
@@ -105,6 +108,7 @@ const NavBar = () => {
                         >
                            <a
                               href={Monica}
+                              target="_blank"
                               style={{
                                  marginLeft: '10px',
                                  marginTop: '10px',
