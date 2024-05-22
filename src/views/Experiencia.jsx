@@ -9,7 +9,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 import Monica from '../assets/MONICA_AYALA.pdf';
 const Experiencia = () => {
-   const setActive = (IsActive) => (IsActive ? 'active' : 'inActive');
+   const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
    return (
       <div>
          <nav className="navbar navbar-expand-lg">
@@ -83,15 +83,7 @@ const Experiencia = () => {
                                     marginRight: '10px',
                                  }}
                               >
-                                 {/* <li> */}
-                                 <span>Proyectos</span>
-                                 {/* <span>
-                                    <i
-                                       className="fas fa-tasks"
-                                       aria-hidden="true"
-                                    ></i>
-                                 </span> */}
-                                 {/* </li> */}
+                                 Proyectos
                               </NavLink>
                            </li>
                            <li
@@ -122,24 +114,14 @@ const Experiencia = () => {
                                  Experiencia
                               </NavLink>
                            </li>
-                           <li
-                              style={{
-                                 display: 'flex',
-                                 justifyContent: 'center',
-                              }}
-                           >
-                              <a
-                                 href={Monica}
-                                 target="_blank"
-                                 style={{
-                                    marginLeft: '10px',
-                                    marginTop: '10px',
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                 }}
+                           <li style={{ display: 'flex', marginLeft: 'auto' }}>
+                              <NavLink
+                                 className={setActive}
+                                 to="/contacto"
+                                 style={{ margin: '10px' }}
                               >
-                                 Curriculum
-                              </a>
+                                 Contacto
+                              </NavLink>
                            </li>
                         </div>
                      </div>
@@ -151,14 +133,25 @@ const Experiencia = () => {
                      justifyContent: 'space-between',
                   }}
                >
-                  <li style={{ display: 'flex', marginLeft: 'auto' }}>
-                     <NavLink
+                  <li
+                     style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                     }}
+                  >
+                     <a
+                        href={Monica}
                         className={setActive}
-                        to="contacto"
-                        style={{ margin: '10px' }}
+                        target="_blank"
+                        style={{
+                           marginLeft: '10px',
+                           marginTop: '10px',
+                           textDecoration: 'none',
+                           color: 'white',
+                        }}
                      >
-                        Contacto
-                     </NavLink>
+                        Curriculum
+                     </a>
                   </li>
                </div>
             </div>

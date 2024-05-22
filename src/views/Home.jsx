@@ -3,24 +3,25 @@ import { NavLink } from 'react-router-dom';
 import Monica from '../assets/MONICA_AYALA.pdf';
 
 const Home = () => {
-   const setActive = (isActive) => (isActive ? 'active' : 'inActive');
+   const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
    return (
       <div>
          <nav className="navbar navbar-expand-lg">
             <div
-               className="container-fluid menu"
+               className="container-fluid"
                style={{ backgroundColor: 'transparent !important' }}
             >
                <NavLink className={setActive} to="/">
-                  <div
+                  {/* <div> */}
+                  <i
                      style={{
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
                      }}
-                  >
-                     <i className="fa-solid fa-house"></i>
-                  </div>
+                     className="fa-solid fa-house"
+                  ></i>
+                  {/* </div> */}
                </NavLink>
                <div
                   className="collapse navbar-collapse"
@@ -77,20 +78,7 @@ const Home = () => {
                                     marginRight: '10px',
                                  }}
                               >
-                                 <ul>
-                                    <li>
-                                       <a>
-                                          <span>Proyectos</span>
-                                          <span>
-                                             <i
-                                                className="fas fa-tasks"
-                                                aria-hidden="true"
-                                                style={{ color: 'yellow' }}
-                                             ></i>
-                                          </span>
-                                       </a>
-                                    </li>
-                                 </ul>
+                                 Proyectos
                               </NavLink>
                            </li>
                            <li
@@ -121,24 +109,14 @@ const Home = () => {
                                  Experiencia
                               </NavLink>
                            </li>
-                           <li
-                              style={{
-                                 display: 'flex',
-                                 justifyContent: 'center',
-                              }}
-                           >
-                              <a
-                                 href={Monica}
-                                 target="_blank"
-                                 style={{
-                                    marginLeft: '10px',
-                                    marginTop: '10px',
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                 }}
+                           <li style={{ display: 'flex', marginLeft: 'auto' }}>
+                              <NavLink
+                                 className={setActive}
+                                 to="contacto"
+                                 style={{ margin: '10px' }}
                               >
-                                 Curriculum
-                              </a>
+                                 Contacto
+                              </NavLink>
                            </li>
                         </div>
                      </div>
@@ -150,14 +128,25 @@ const Home = () => {
                      justifyContent: 'space-between',
                   }}
                >
-                  <li style={{ display: 'flex', marginLeft: 'auto' }}>
-                     <NavLink
+                  <li
+                     style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                     }}
+                  >
+                     <a
+                        href={Monica}
                         className={setActive}
-                        to="contacto"
-                        style={{ margin: '10px' }}
+                        target="_blank"
+                        style={{
+                           marginLeft: '10px',
+                           marginTop: '10px',
+                           textDecoration: 'none',
+                           color: 'white',
+                        }}
                      >
-                        Contacto
-                     </NavLink>
+                        Curriculum
+                     </a>
                   </li>
                </div>
             </div>

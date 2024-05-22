@@ -88,15 +88,15 @@ hr {
 .menu a:hover::before{
   visibility: visible;
   transform: scaleX(1);
-}
+} 
 
 .active{
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 .inActive{
+  color: rgb(22, 18, 18);
   text-decoration: none;
-  color: white;
 }
 input,textarea{
   background-color: white !important;

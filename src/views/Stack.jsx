@@ -14,7 +14,7 @@ import Grafana from '../assets/img/grafana.jpeg';
 import Server from '../assets/img/server.jpeg';
 
 const Stack = () => {
-   const setActive = (isActive) => (isActive ? 'active' : 'inActive');
+   const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
    return (
       <>
          <nav className="navbar navbar-expand-lg">
@@ -88,15 +88,7 @@ const Stack = () => {
                                     marginRight: '10px',
                                  }}
                               >
-                                 {/* <li> */}
-                                 <span>Proyectos</span>
-                                 {/* <span>
-                                    <i
-                                       className="fas fa-tasks"
-                                       aria-hidden="true"
-                                    ></i>
-                                 </span> */}
-                                 {/* </li> */}
+                                 Proyectos
                               </NavLink>
                            </li>
                            <li
@@ -127,24 +119,14 @@ const Stack = () => {
                                  Experiencia
                               </NavLink>
                            </li>
-                           <li
-                              style={{
-                                 display: 'flex',
-                                 justifyContent: 'center',
-                              }}
-                           >
-                              <a
-                                 href={Monica}
-                                 target="_blank"
-                                 style={{
-                                    marginLeft: '10px',
-                                    marginTop: '10px',
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                 }}
+                           <li style={{ display: 'flex', marginLeft: 'auto' }}>
+                              <NavLink
+                                 className={setActive}
+                                 to="/contacto"
+                                 style={{ margin: '10px' }}
                               >
-                                 Curriculum
-                              </a>
+                                 Contacto
+                              </NavLink>
                            </li>
                         </div>
                      </div>
@@ -156,14 +138,25 @@ const Stack = () => {
                      justifyContent: 'space-between',
                   }}
                >
-                  <li style={{ display: 'flex', marginLeft: 'auto' }}>
-                     <NavLink
+                  <li
+                     style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                     }}
+                  >
+                     <a
+                        href={Monica}
                         className={setActive}
-                        to="contacto"
-                        style={{ margin: '10px' }}
+                        target="_blank"
+                        style={{
+                           marginLeft: '10px',
+                           marginTop: '10px',
+                           textDecoration: 'none',
+                           color: 'white',
+                        }}
                      >
-                        Contacto
-                     </NavLink>
+                        Curriculum
+                     </a>
                   </li>
                </div>
             </div>

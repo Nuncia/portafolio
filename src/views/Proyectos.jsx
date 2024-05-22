@@ -5,7 +5,7 @@ import mammaMia from '../assets/img/mamma_mia.png';
 import pokemon from '../assets/img/pokemon_page.png';
 import adoptaPerrito from '../assets/img/adopta_un_perrito.png';
 const Proyectos = () => {
-   const setActive = (isActive) => (isActive ? 'active' : 'inActive');
+   const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
    return (
       <section>
          <nav className="navbar navbar-expand-lg">
@@ -79,15 +79,7 @@ const Proyectos = () => {
                                     marginRight: '10px',
                                  }}
                               >
-                                 {/* <li> */}
-                                 <span>Proyectos</span>
-                                 {/* <span>
-                                    <i
-                                       className="fas fa-tasks"
-                                       aria-hidden="true"
-                                    ></i>
-                                 </span> */}
-                                 {/* </li> */}
+                                 Proyectos
                               </NavLink>
                            </li>
                            <li
@@ -118,24 +110,14 @@ const Proyectos = () => {
                                  Experiencia
                               </NavLink>
                            </li>
-                           <li
-                              style={{
-                                 display: 'flex',
-                                 justifyContent: 'center',
-                              }}
-                           >
-                              <a
-                                 href={Monica}
-                                 target="_blank"
-                                 style={{
-                                    marginLeft: '10px',
-                                    marginTop: '10px',
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                 }}
+                           <li style={{ display: 'flex', marginLeft: 'auto' }}>
+                              <NavLink
+                                 className={setActive}
+                                 to="/contacto"
+                                 style={{ margin: '10px' }}
                               >
-                                 Curriculum
-                              </a>
+                                 Contacto
+                              </NavLink>
                            </li>
                         </div>
                      </div>
@@ -147,14 +129,25 @@ const Proyectos = () => {
                      justifyContent: 'space-between',
                   }}
                >
-                  <li style={{ display: 'flex', marginLeft: 'auto' }}>
-                     <NavLink
+                  <li
+                     style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                     }}
+                  >
+                     <a
+                        href={Monica}
                         className={setActive}
-                        to="contacto"
-                        style={{ margin: '10px' }}
+                        target="_blank"
+                        style={{
+                           marginLeft: '10px',
+                           marginTop: '10px',
+                           textDecoration: 'none',
+                           color: 'white',
+                        }}
                      >
-                        Contacto
-                     </NavLink>
+                        Curriculum
+                     </a>
                   </li>
                </div>
             </div>

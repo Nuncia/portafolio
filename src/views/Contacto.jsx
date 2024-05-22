@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Monica from '../assets/MONICA_AYALA.pdf';
 
 const Contacto = () => {
-   const setActive = (isActive) => (isActive ? 'active' : 'inActive');
-   useEffect(() => {}, []);
+   const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
 
    return (
       <div>
@@ -79,15 +78,7 @@ const Contacto = () => {
                                     marginRight: '10px',
                                  }}
                               >
-                                 {/* <li> */}
-                                 <span>Proyectos</span>
-                                 {/* <span>
-                                    <i
-                                       className="fas fa-tasks"
-                                       aria-hidden="true"
-                                    ></i>
-                                 </span> */}
-                                 {/* </li> */}
+                                 Proyectos
                               </NavLink>
                            </li>
                            <li
@@ -118,24 +109,14 @@ const Contacto = () => {
                                  Experiencia
                               </NavLink>
                            </li>
-                           <li
-                              style={{
-                                 display: 'flex',
-                                 justifyContent: 'center',
-                              }}
-                           >
-                              <a
-                                 href={Monica}
-                                 target="_blank"
-                                 style={{
-                                    marginLeft: '10px',
-                                    marginTop: '10px',
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                 }}
+                           <li style={{ display: 'flex', marginLeft: 'auto' }}>
+                              <NavLink
+                                 className={setActive}
+                                 to="/contacto"
+                                 style={{ margin: '10px' }}
                               >
-                                 Curriculum
-                              </a>
+                                 Contacto
+                              </NavLink>
                            </li>
                         </div>
                      </div>
@@ -147,14 +128,25 @@ const Contacto = () => {
                      justifyContent: 'space-between',
                   }}
                >
-                  <li style={{ display: 'flex', marginLeft: 'auto' }}>
-                     <NavLink
+                  <li
+                     style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                     }}
+                  >
+                     <a
+                        href={Monica}
                         className={setActive}
-                        to="contacto"
-                        style={{ margin: '10px' }}
+                        target="_blank"
+                        style={{
+                           marginLeft: '10px',
+                           marginTop: '10px',
+                           textDecoration: 'none',
+                           color: 'white',
+                        }}
                      >
-                        Contacto
-                     </NavLink>
+                        Curriculum
+                     </a>
                   </li>
                </div>
             </div>
@@ -162,7 +154,7 @@ const Contacto = () => {
          <div
             className="contacto"
             style={{
-               height: '78vh',
+               // height: '78vh',
                display: 'flex',
                justifyContent: 'center',
                alignItems: 'center',
@@ -177,10 +169,9 @@ const Contacto = () => {
                   flexDirection: 'column',
                   justifyContent: 'flex-end',
                   alignItems: 'center',
+                  marginTop: '-187px',
                }}
             >
-               <h2>Puedes contactarme</h2>
-               <br />
                <input
                   type="email"
                   className="w-50 form-control"
