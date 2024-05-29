@@ -4,6 +4,8 @@ import Monica from '../assets/MONICA_AYALA.pdf';
 import mammaMia from '../assets/img/mamma_mia.png';
 import pokemon from '../assets/img/pokemon_page.png';
 import adoptaPerrito from '../assets/img/adopta_un_perrito.png';
+import monedas from '../assets/img/monedas.png';
+import likeMe from '../assets/img/likeMe.png';
 const Proyectos = () => {
    const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
    return (
@@ -192,6 +194,7 @@ const Proyectos = () => {
                      <a
                         href="https://github.com/Nuncia/mammaMia/tree/main"
                         className="btn btn-dark"
+                        target="_blank"
                         style={{
                            margin: '10px',
                         }}
@@ -199,11 +202,12 @@ const Proyectos = () => {
                         Github
                      </a>
                      <a
-                        href="#"
+                        href="https://mammamia-2.onrender.com/"
                         className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
+                        target="_blank"
                      >
                         Aplicación
                      </a>
@@ -272,11 +276,12 @@ const Proyectos = () => {
                         style={{
                            margin: '10px',
                         }}
+                        target="_blank"
                      >
                         Github
                      </a>
                      <a
-                        href="#"
+                        href="https://pokemon-idlf.onrender.com/"
                         className="btn btn-dark"
                         style={{
                            margin: '10px',
@@ -323,13 +328,13 @@ const Proyectos = () => {
                   }}
                >
                   <img
-                     src={adoptaPerrito}
+                     src={monedas}
                      className="card-img-top"
                      alt="..."
                      style={{ height: '28vh' }}
                   />
                   <div className="card-body">
-                     <h5 className="card-title">Adopta un perrito</h5>
+                     <h5 className="card-title">Monedas</h5>
                      <div className="card-text">
                         <ul>
                            <li>Aplicación web</li>
@@ -346,16 +351,17 @@ const Proyectos = () => {
                      }}
                   >
                      <a
-                        href="https://github.com/Nuncia/adoptaUnoPerrito"
+                        href="https://github.com/Nuncia/monedas"
                         className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
+                        target="_blank"
                      >
                         Github
                      </a>
                      <a
-                        href="#"
+                        href="https://monedas-y8gj.onrender.com/"
                         className="btn btn-dark"
                         style={{
                            margin: '10px',
@@ -398,9 +404,9 @@ const Proyectos = () => {
                   className="card"
                   style={{ width: '35rem', border: '3px solid white' }}
                >
-                  <img src="..." className="card-img-top" alt="..." />
+                  <img src={likeMe} className="card-img-top" alt="..." />
                   <div className="card-body">
-                     <h5 className="card-title">Card title</h5>
+                     <h5 className="card-title">Natural Pic</h5>
                      <p className="card-text">
                         This is a longer card with supporting text below as a
                         natural lead-in to additional content. This content is a
@@ -415,16 +421,17 @@ const Proyectos = () => {
                      }}
                   >
                      <a
-                        href="#"
+                        href="https://github.com/Nuncia/likesApp"
                         className="btn btn-dark"
                         style={{
                            margin: '10px',
                         }}
+                        target="_blank"
                      >
                         Github
                      </a>
                      <a
-                        href="#"
+                        href="https://likesapp.onrender.com/"
                         className="btn btn-dark"
                         style={{
                            margin: '10px',
