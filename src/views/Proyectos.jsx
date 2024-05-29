@@ -341,6 +341,9 @@ const Proyectos = () => {
                            <li>
                               Desarrollado con React,CSS, HTML y JavaScript
                            </li>
+                           <li>Datos obtenidos desde API</li>
+                           <br />
+                           <br />
                         </ul>
                      </div>
                   </div>
@@ -407,11 +410,15 @@ const Proyectos = () => {
                   <img src={likeMe} className="card-img-top" alt="..." />
                   <div className="card-body">
                      <h5 className="card-title">Natural Pic</h5>
-                     <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                     </p>
+                     <div className="card-text">
+                        <ul>
+                           <li>Aplicación web</li>
+                           <li>
+                              Desarrollado con React, JavaScript, CSS y HTML
+                           </li>
+                           <li>Datos obtenidos dede JSON</li>
+                        </ul>
+                     </div>
                   </div>
                   <div
                      style={{
@@ -439,6 +446,33 @@ const Proyectos = () => {
                      >
                         Aplicación
                      </a>
+                  </div>
+                  <div
+                     style={{
+                        marginBottom: '10px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                     }}
+                  >
+                     <span className="badge bg-secondary">React</span>
+                     <span
+                        className="badge bg-secondary"
+                        style={{ marginLeft: '5px' }}
+                     >
+                        CSS
+                     </span>
+                     <span
+                        className="badge bg-secondary"
+                        style={{ marginLeft: '5px' }}
+                     >
+                        HTML
+                     </span>
+                     <span
+                        className="badge bg-secondary"
+                        style={{ marginLeft: '5px' }}
+                     >
+                        JavaScript
+                     </span>
                   </div>
                </div>
             </div>
