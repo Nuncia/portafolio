@@ -260,7 +260,7 @@ const Proyectos = () => {
                            <li>
                               Desarrollado con React, JavaScript, CSS y HTML
                            </li>
-                           <li>Datos obtenidos dede JSON</li>
+                           <li>Datos obtenidos desde JSON</li>
                         </ul>
                      </div>
                   </div>
@@ -416,7 +416,7 @@ const Proyectos = () => {
                            <li>
                               Desarrollado con React, JavaScript, CSS y HTML
                            </li>
-                           <li>Datos obtenidos dede JSON</li>
+                           <li>Datos obtenidos desde JSON</li>
                         </ul>
                      </div>
                   </div>
