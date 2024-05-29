@@ -335,7 +335,7 @@ const Proyectos = () => {
                   />
                   <div className="card-body">
                      <h5 className="card-title">Monedas</h5>
-                     <div className="card-text">
+                     <div className="card-text mb-3">
                         <ul>
                            <li>Aplicación web</li>
                            <li>
