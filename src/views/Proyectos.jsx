@@ -342,8 +342,6 @@ const Proyectos = () => {
                               Desarrollado con React,CSS, HTML y JavaScript
                            </li>
                            <li>Datos obtenidos desde API</li>
-                           <br />
-                           <br />
                         </ul>
                      </div>
                   </div>
