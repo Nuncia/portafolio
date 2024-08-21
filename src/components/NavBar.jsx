@@ -55,7 +55,7 @@ const NavBar = () => {
                                  marginRight: '15px',
                               }}
                            >
-                              Stack
+                              <p>Stack</p>
                            </NavLink>
                         </li>
                         <li
@@ -93,7 +93,11 @@ const NavBar = () => {
                            </NavLink>
                         </li>
                         <li
-                           style={{ display: 'flex', justifyContent: 'center' }}
+                           style={{
+                              color: 'white !important',
+                              display: 'flex',
+                              justifyContent: 'center',
+                           }}
                         >
                            <NavLink
                               className={setActive}

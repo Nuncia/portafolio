@@ -1,268 +1,289 @@
-*{
-  color: white;
-  animation: cambioColor 10s infinite alternate;
-  /* transition: background-color 0.5s ease; */
-  font-size: large;
+* {
+   animation: cambioColor 10s infinite alternate;
+   /* transition: background-color 0.5s ease; */
+   font-size: large;
+   background-color: #939597 !important;
+   color: #f1ecf4;
+}
+#stack {
+   color: white;
+}
+root {
+   color: white !important;
 }
 :root {
-  --body-bg-color: #1a1c1d;
-  --text-color: #aaaebc;
-  --hr-color: #26292a;
-  --red: #e74c3c;
+   --body-bg-color: #1a1c1d;
+   --text-color: #aaaebc;
+   --hr-color: #26292a;
+   --red: #e74c3c;
 }
-button{
-  background-color: #c8ccd5 !important;
+button {
+   background-color: #c8ccd5 !important;
 }
-.nombre{
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 32ch;
-  font-size: 20px;
-  font-style: italic;
-  animation: escribir 5s steps(30) infinite alternate;
-  overflow: hidden;
-  height: 22px;
-  text-align: center;
-  margin-left: 19px;
+.nombre {
+   display: block;
+   font-family: monospace;
+   white-space: nowrap;
+   border-right: 4px solid;
+   width: 32ch;
+   font-size: 20px;
+   font-style: italic;
+   animation: escribir 5s steps(30) infinite alternate;
+   overflow: hidden;
+   height: 22px;
+   text-align: center;
+   margin-left: 19px;
 }
 @keyframes escribir {
-  from {width: 75%}
-  to {width: 0;}
+   from {
+      width: 75%;
+   }
+   to {
+      width: 0;
+   }
 }
 @keyframes blink {
-  50% {border-color: transparent;}
+   50% {
+      border-color: transparent;
+   }
 }
-.navBar footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-   color: white;
+.navBar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white !important;
    background-color: transparent;
-   /* animation: cambioColor 10s infinite alternate;
-   transition: background-color 0.5s ease; */
+   animation: cambioColor 10s infinite alternate;
+   transition: background-color 0.5s ease;
 }
 a {
-  color: inherit;
-  text-decoration: none;
+   /* color: white !important; */
+   text-decoration: none;
 }
-/* body {
-  margin: 30px 0;
-  font: 22px sans-serif;
-  background: var(--body-bg-color);
-  color: var(--text-color);
-} */
+body {
+   margin: 30px 0;
+   font: 22px sans-serif;
+   background: var(--body-bg-color);
+   /* color: var(--text-color); */
+   color: rgb(208, 93, 93) !important;
+}
 hr {
-  border-color: var(--hr-color);
-  margin: 20px 0;
+   border-color: var(--hr-color);
+   margin: 20px 0;
 }
 .menu {
-  display: flex;
-  justify-content: center;
+   display: flex;
+   justify-content: center;
 }
 .menu li {
-  margin-right: 30px;
+   margin-right: 30px;
 }
 .menu a {
-  position: relative;
-  display: block;
-  overflow: hidden;
+   position: relative;
+   display: block;
+   overflow: hidden;
 }
 .menu a span {
-  transition: transform 0.2s ease-out;
-} 
-.menu a::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-  z-index: 1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+   transition: transform 0.2s ease-out;
 }
-.menu a:hover::before{
-  visibility: visible;
-  transform: scaleX(1);
-} 
+.menu a::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+   z-index: 1;
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: transform 0.5s ease-in-out;
+}
+.menu a:hover::before {
+   visibility: visible;
+   transform: scaleX(1);
+}
 
-.active{
-  color: white;
-  text-decoration: none;
+.active {
+   /* color: white; */
+   text-decoration: none;
 }
-.inActive{
-  color: rgb(22, 18, 18);
-  text-decoration: none;
+.inActive {
+   /* color: rgb(22, 18, 18); */
+   text-decoration: none;
 }
-input,textarea{
-  background-color: white !important;
+input,
+textarea {
+   background-color: white !important;
 }
 
 @keyframes cambioColor {
-  0% {background-color: rgb(14, 14, 56);}
-  50% {background-color: rgb(34, 34, 205);}
-  100% {background-color: rgb(14, 14, 56)};
+   0% {
+      background-color: rgb(14, 14, 56);
+   }
+   50% {
+      background-color: rgb(16, 16, 58);
+   }
+   100% {
+      background-color: rgb(14, 14, 56);
+   }
 }
-.linea-vertical{
-  border: 5px solid rgb(223, 243, 10);
-  height: 100px;
-  margin: 0 auto;
-  /* width: 200px; */
-  padding-left: 300px;
+.linea-vertical {
+   border: 5px solid rgb(223, 243, 10);
+   height: 100px;
+   margin: 0 auto;
+   /* width: 200px; */
+   padding-left: 300px;
 }
-.experiencia{
-  width: 45%;
-  height: 10vh;
-  border: 2px solid ;
-  margin-left: auto;
-  margin-right: auto;
+.experiencia {
+   width: 45%;
+   height: 10vh;
+   border: 2px solid;
+   margin-left: auto;
+   margin-right: auto;
 }
-.linea-central{
-  background-color: aliceblue;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 80vh;
-  top: 100px;
-  width: 2px;
-  border: 1px solid rgb(223, 243, 10);  
+.linea-central {
+   background-color: aliceblue;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 80vh;
+   top: 100px;
+   width: 2px;
+   border: 1px solid rgb(223, 243, 10);
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: #456990;
-  overflow-x: hidden;
-  color: white;
-  /* animation: cambioColor 10s infinite alternate;
+   font: normal 16px/1.5 'Helvetica Neue', sans-serif;
+   background: #d5e2ef;
+   overflow-x: hidden;
+   /* color: white; */
+   /* animation: cambioColor 10s infinite alternate;
   transition: background-color 0.5s ease; */
 }
 
 /* The actual timeline (the vertical ruler) */
 .main-timeline {
-  position: relative;
+   position: relative;
 }
 
 /* The actual timeline (the vertical ruler) */
 .main-timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #939597;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+   content: '';
+   position: absolute;
+   width: 6px;
+   background-color: #939597;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   margin-left: -3px;
 }
 
 /* Container around content */
 .timeline {
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+   position: relative;
+   background-color: inherit;
+   width: 50%;
 }
 
 /* The circles on the timeline */
 .timeline::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: #939597;
-  border: 5px solid #f5df4d;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+   content: '';
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   right: -13px;
+   background-color: #939597;
+   border: 5px solid #f5df4d;
+   top: 15px;
+   border-radius: 50%;
+   z-index: 1;
 }
 
 /* Place the container to the left */
 .left {
-  padding: 0px 40px 20px 0px;
-  left: 0;
+   padding: 0px 40px 20px 0px;
+   left: 0;
 }
 
 /* Place the container to the right */
 .right {
-  padding: 0px 0px 20px 40px;
-  left: 50%;
-  width: auto;
+   padding: 0px 0px 20px 40px;
+   left: 50%;
+   width: auto;
 }
 
 /* Add arrows to the left container (pointing right) */
 .left::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+   content: ' ';
+   position: absolute;
+   top: 18px;
+   z-index: 1;
+   right: 30px;
+   border: medium solid white;
+   border-width: 10px 0 10px 10px;
+   border-color: transparent transparent transparent white;
 }
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+   content: ' ';
+   position: absolute;
+   top: 18px;
+   z-index: 1;
+   left: 30px;
+   border: medium solid white;
+   border-width: 10px 10px 10px 0;
+   border-color: transparent white transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -12px;
+   left: -12px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .main-timeline::after {
-    left: 31px;
-  }
+   /* Place the timelime to the left */
+   .main-timeline::after {
+      left: 31px;
+   }
 
-  /* Full-width containers */
-  .timeline {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
+   /* Full-width containers */
+   .timeline {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+   }
 
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
+   /* Make sure that all arrows are pointing leftwards */
+   .timeline::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+   }
 
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
-  }
+   /* Make sure all circles are at the same spot */
+   .left::after,
+   .right::after {
+      left: 18px;
+   }
 
-  .left::before {
-    right: auto;
-  }
+   .left::before {
+      right: auto;
+   }
 
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+   /* Make all right containers behave like the left ones */
+   .right {
+      left: 0%;
+   }
 }

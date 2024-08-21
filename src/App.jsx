@@ -11,20 +11,20 @@ import Contacto from './views/Contacto';
 
 function App() {
    return (
-      <div className="cambiaColor">
-         <BrowserRouter>
-            {/* <NavBar /> */}
-            <Routes>
-               <Route path="/" element={<Home />} />
-               <Route path="/stack" element={<Stack />} />
-               <Route path="/experiencia" element={<Experiencia />} />
-               <Route path="/educacion" element={<Educación />} />
-               <Route path="/proyectos" element={<Proyectos />} />
-               <Route path="/contacto" element={<Contacto />} />
-            </Routes>
-            {/* <Footer /> */}
-         </BrowserRouter>
-      </div>
+      // <div className="cambiaColor">
+      <BrowserRouter>
+         {/* <NavBar /> */}
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/stack" element={<Stack />} />
+            <Route path="/experiencia" element={<Experiencia />} />
+            <Route path="/educacion" element={<Educación />} />
+            <Route path="/proyectos" element={<Proyectos />} />
+            <Route path="/contacto" element={<Contacto />} />
+         </Routes>
+         {/* <Footer /> */}
+      </BrowserRouter>
+      // </div>
    );
 }
 

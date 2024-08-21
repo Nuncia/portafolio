@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import Monica from '../assets/MONICA_AYALA.pdf';
+import NavBar from '../components/NavBar';
 
 const Home = () => {
    const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
@@ -9,19 +10,18 @@ const Home = () => {
          <nav className="navbar navbar-expand-lg">
             <div
                className="container-fluid"
-               style={{ backgroundColor: 'transparent !important' }}
+               style={{ backgroundColor: 'red !important' }}
             >
                <NavLink className={setActive} to="/">
-                  {/* <div> */}
-                  <i
+                  <div
                      style={{
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
                      }}
-                     className="fa-solid fa-house"
-                  ></i>
-                  {/* </div> */}
+                  >
+                     <i className="fa-solid fa-house"></i>
+                  </div>
                </NavLink>
                <div
                   className="collapse navbar-collapse"
@@ -46,6 +46,7 @@ const Home = () => {
                            }}
                         >
                            <li
+                              className="stack"
                               style={{
                                  display: 'flex',
                                  justifyContent: 'center',
@@ -78,7 +79,15 @@ const Home = () => {
                                     marginRight: '10px',
                                  }}
                               >
-                                 Proyectos
+                                 {/* <li> */}
+                                 <span>Proyectos</span>
+                                 {/* <span>
+                                    <i
+                                       className="fas fa-tasks"
+                                       aria-hidden="true"
+                                    ></i>
+                                 </span> */}
+                                 {/* </li> */}
                               </NavLink>
                            </li>
                            <li
@@ -109,14 +118,24 @@ const Home = () => {
                                  Experiencia
                               </NavLink>
                            </li>
-                           <li style={{ display: 'flex', marginLeft: 'auto' }}>
-                              <NavLink
-                                 className={setActive}
-                                 to="contacto"
-                                 style={{ margin: '10px' }}
+                           <li
+                              style={{
+                                 display: 'flex',
+                                 justifyContent: 'center',
+                              }}
+                           >
+                              <a
+                                 href={Monica}
+                                 target="_blank"
+                                 style={{
+                                    marginLeft: '10px',
+                                    marginTop: '10px',
+                                    textDecoration: 'none',
+                                    color: 'white',
+                                 }}
                               >
-                                 Contacto
-                              </NavLink>
+                                 Curriculum
+                              </a>
                            </li>
                         </div>
                      </div>
@@ -128,30 +147,20 @@ const Home = () => {
                      justifyContent: 'space-between',
                   }}
                >
-                  <li
-                     style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                     }}
-                  >
-                     <a
-                        href={Monica}
+                  <li style={{ display: 'flex', marginLeft: 'auto' }}>
+                     <NavLink
                         className={setActive}
-                        target="_blank"
-                        style={{
-                           marginLeft: '10px',
-                           marginTop: '10px',
-                           textDecoration: 'none',
-                           color: 'white',
-                        }}
+                        to="contacto"
+                        style={{ margin: '10px' }}
                      >
-                        Curriculum
-                     </a>
+                        Contacto
+                     </NavLink>
                   </li>
                </div>
             </div>
          </nav>
          <div
+            className="fondo"
             style={{
                display: 'flex',
                justifyContent: 'center',
@@ -162,7 +171,7 @@ const Home = () => {
             }}
          >
             <div>
-               <h1>Mónica Ayala Huerta</h1>
+               <p className="text-4xl">Mónica Ayala Huerta</p>
                <span className="nombre">Desarrolladora FullStack</span>
                {/* <span className="nombre">Ingeniero civil en computación</span> */}
             </div>

@@ -4,8 +4,9 @@ import Monica from '../assets/MONICA_AYALA.pdf';
 import mammaMia from '../assets/img/mamma_mia.png';
 import pokemon from '../assets/img/pokemon_page.png';
 import adoptaPerrito from '../assets/img/adopta_un_perrito.png';
-import monedas from '../assets/img/monedas.png';
+import monedas1 from '../assets/img/monedas.png';
 import likeMe from '../assets/img/likeMe.png';
+import ticketera from '../assets/img/ticketera.png';
 const Proyectos = () => {
    const setActive = ({ isActive }) => (isActive ? 'active' : 'inActive');
    return (
@@ -13,7 +14,7 @@ const Proyectos = () => {
          <nav className="navbar navbar-expand-lg">
             <div
                className="container-fluid"
-               style={{ backgroundColor: 'transparent !important' }}
+               style={{ color: 'white !important' }}
             >
                <NavLink className={setActive} to="/">
                   <div
@@ -154,14 +155,16 @@ const Proyectos = () => {
                </div>
             </div>
          </nav>
-         <div
-            className="row row-cols-1 row-cols-md-2 g-5 pt-4 ps-5"
-            // style={{ marginLeft: '290px' }}
-         >
+         <div className="row row-cols-1 row-cols-md-3 g-2 pt-4 ps-5">
             <div className="col">
                <div
                   className="card"
-                  style={{ width: '35rem', border: '3px solid white' }}
+                  style={{
+                     width: '25rem',
+                     height: '30rem',
+                     border: '3px solid white',
+                     backgroundColor: 'gray',
+                  }}
                >
                   <img
                      src={mammaMia}
@@ -189,6 +192,8 @@ const Proyectos = () => {
                      style={{
                         display: 'flex',
                         justifyContent: 'space-evenly',
+                        paddingBottom: '57px',
+                        paddingTop: '-5px',
                      }}
                   >
                      <a
@@ -217,6 +222,7 @@ const Proyectos = () => {
                         marginBottom: '10px',
                         display: 'flex',
                         justifyContent: 'center',
+                        paddingBottom: '5px',
                      }}
                   >
                      <span className="badge bg-secondary">React</span>
@@ -244,7 +250,11 @@ const Proyectos = () => {
             <div className="col">
                <div
                   className="card"
-                  style={{ width: '35rem', border: '3px solid white' }}
+                  style={{
+                     width: '25rem',
+                     height: '30rem',
+                     border: '3px solid white',
+                  }}
                >
                   <img
                      src={pokemon}
@@ -268,6 +278,7 @@ const Proyectos = () => {
                      style={{
                         display: 'flex',
                         justifyContent: 'space-evenly',
+                        paddingBottom: '57px',
                      }}
                   >
                      <a
@@ -295,6 +306,7 @@ const Proyectos = () => {
                         marginBottom: '10px',
                         display: 'flex',
                         justifyContent: 'center',
+                        paddingBottom: '5px',
                      }}
                   >
                      <span className="badge bg-secondary">React</span>
@@ -323,12 +335,13 @@ const Proyectos = () => {
                <div
                   className="card"
                   style={{
-                     width: '35rem',
+                     width: '25rem',
+                     height: '30rem',
                      border: '3px solid white',
                   }}
                >
                   <img
-                     src={monedas}
+                     src={monedas1}
                      className="card-img-top"
                      alt="..."
                      style={{ height: '28vh' }}
@@ -351,6 +364,7 @@ const Proyectos = () => {
                      style={{
                         display: 'flex',
                         justifyContent: 'space-evenly',
+                        paddingBottom: '57px',
                      }}
                   >
                      <a
@@ -378,6 +392,7 @@ const Proyectos = () => {
                         marginBottom: '10px',
                         display: 'flex',
                         justifyContent: 'center',
+                        paddingBottom: '5px',
                      }}
                   >
                      <span className="badge bg-secondary">React</span>
@@ -405,7 +420,11 @@ const Proyectos = () => {
             <div className="col" style={{ paddingBottom: '60px' }}>
                <div
                   className="card"
-                  style={{ width: '35rem', border: '3px solid white' }}
+                  style={{
+                     width: '25rem',
+                     height: '30rem',
+                     border: '3px solid white',
+                  }}
                >
                   <img src={likeMe} className="card-img-top" alt="..." />
                   <div className="card-body">
@@ -452,6 +471,95 @@ const Proyectos = () => {
                         marginBottom: '10px',
                         display: 'flex',
                         justifyContent: 'center',
+                        paddingBottom: '5px',
+                     }}
+                  >
+                     <span className="badge bg-secondary">React</span>
+                     <span
+                        className="badge bg-secondary"
+                        style={{ marginLeft: '5px' }}
+                     >
+                        CSS
+                     </span>
+                     <span
+                        className="badge bg-secondary"
+                        style={{ marginLeft: '5px' }}
+                     >
+                        HTML
+                     </span>
+                     <span
+                        className="badge bg-secondary"
+                        style={{ marginLeft: '5px' }}
+                     >
+                        JavaScript
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div className="col" style={{ paddingBottom: '60px' }}>
+               <div
+                  className="card"
+                  style={{
+                     width: '25rem',
+                     height: '30rem',
+                     border: '3px solid white',
+                  }}
+               >
+                  <img
+                     src={ticketera}
+                     className="card-img-top"
+                     alt="..."
+                     style={{ height: '141px' }}
+                  />
+                  <div
+                     className="card-body"
+                     style={{ backgroundColor: 'white' }}
+                  >
+                     <h5 className="card-title">Ticketera</h5>
+                     <div className="card-text">
+                        <ul>
+                           <li>Aplicación web</li>
+                           <li>
+                              Desarrollado con React, JavaScript,Tailwind,
+                              CSS,Postgres y HTML
+                           </li>
+                           <li>Datos obtenidos desde Base de datos</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div
+                     style={{
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        paddingBottom: '40px',
+                     }}
+                  >
+                     <a
+                        href="https://github.com/Nuncia/ticketera"
+                        className="btn btn-dark"
+                        style={{
+                           margin: '10px',
+                        }}
+                        target="_blank"
+                     >
+                        Github
+                     </a>
+                     <a
+                        href="https://66bbdd225c48bd00085752d1--ticketera.netlify.app/"
+                        className="btn btn-dark"
+                        style={{
+                           margin: '10px',
+                        }}
+                     >
+                        Aplicación
+                     </a>
+                  </div>
+                  <div
+                     style={{
+                        marginBottom: '10px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        paddingBottom: '5px',
                      }}
                   >
                      <span className="badge bg-secondary">React</span>
